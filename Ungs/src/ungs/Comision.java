@@ -35,25 +35,7 @@ public class Comision {
 	public Estudiante[] getInscriptos() {
 		return inscriptos;
 	}
-	
-	boolean estaDocente(Docente d) {
-		for (Docente doc:docentes) {
-			if (doc.equals(d)) {
-				return true;
-			}
-		}
-		return false;
-	}
-	
-	boolean estaEstudiante (Estudiante e) {
-		for (Estudiante est:inscriptos) {
-			if (est.equals(e)) {
-				return true;
-			}
-		}
-		return false;
-	}
-	
+
 	public int[] getCalificaciones() {
 		return calificaciones;
 	}
@@ -70,7 +52,7 @@ public class Comision {
 		aux +="\n inscriptos: \n";
 		
 		for (int i = 0; i < this.inscriptos.length; i++) {
-			aux += this.inscriptos[i] + ", Calificaciï¿½n: " + this.calificaciones[i] +"\n";
+			aux += this.inscriptos[i] + ", Calificación: " + this.calificaciones[i] +"\n";
 		}
 		return  aux;
 	}

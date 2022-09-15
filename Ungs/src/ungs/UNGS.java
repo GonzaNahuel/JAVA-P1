@@ -30,14 +30,5 @@ public class UNGS {
 		}
 
 	}
-	
-	boolean cursaCon(Estudiante e, Docente d) {
-		for (Comision com:comisiones) {
-			if (com.estaDocente(d) && com.estaEstudiante(e)) {
-				return true;
-			}
-		}
-		return false;
-	}
 
 }
